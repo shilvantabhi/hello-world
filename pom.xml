@@ -14,6 +14,9 @@
   <properties>
     <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>utf-8</project.reporting.outputEncoding>
+    <!-- Specify Java version for Maven to use -->
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
   </properties>
 
   <modules>
@@ -33,9 +36,10 @@
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version> <!-- Updated version -->
         <configuration>
-          <source>1.6</source>
-          <target>1.6</target>
+          <source>17</source> <!-- Update to Java 17 -->
+          <target>17</target> <!-- Update to Java 17 -->
         </configuration>
       </plugin>
 
@@ -93,7 +97,7 @@
 
         <plugin>
           <artifactId>maven-compiler-plugin</artifactId>
-          <version>2.3.2</version>
+          <version>3.8.1</version> <!-- Updated version -->
         </plugin>
 
         <plugin>
